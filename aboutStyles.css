@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    background-color: #ffecba;
+    font-family: 'Cormorant Garamond', serif;
+  }
+    
+  header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+    
+    #topNav {
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    height: 88px;
+    align-items: flex-end;
+    
+  
+  
+  }
+ .topLinks{
+    color: #805e55;
+    margin: 1% 1%;
+    height: 50px;
+    width: 20%;
+    font-size: 20px;
+    text-align: center;
+    background: none;
+    padding: 4px;
+    display: flex;
+  align-items: flex-end;
+    justify-content: flex-end;
+  }
+main {
+    width: 2000px;
+    height: 1200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 2fr 1fr 7fr 3fr 1fr;
+    grid-template-columns: 3fr 2fr 6fr 4fr 3fr 1fr 12fr 4fr 3fr;
+    color: #805e55;
+}
+
+#backgroundBottom {
+    background-color: #e0958a;
+    grid-row: 7/-1;
+    grid-column: 1/-1;
+}
+
+h1 {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    font-size: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+#imageBox {
+    grid-row: 6/9;
+    grid-column: 2/5;
+    background-color: #6b8d8c;
+}
+
+#quote {
+    grid-row: 2/5;
+    grid-column: 6/8;
+    font-style: italic;
+    font-size: 55px;
+
+}
+#mainArticle {
+    grid-row: 8/10;
+    grid-column: 7/9;
+    color: #24110b;
+}
+
+h2 {
+    font-size: 65px;
+}
+
+.articleText {
+    font-size: 25px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#bottomNav {
+border: 1px solid blue;
+    display: flex;
+    justify-content: flex-start;
+    height: 120px;
+    background-color: #e0958a;
+}
+/*when I use "768" as the max-width, it doesn't change on my monitor until 576 at 960 it changes at 728. at 100 it changes at 748*/
+@media (max-width: 768px) {
+    body {
+        background-color: green;
+
+    }
+    main {
+        width: 770px;
+        height: 1026px;
+        display: grid;
+        grid-template-rows: 
+        grid-template-columns: 
+    }
+}
+
+

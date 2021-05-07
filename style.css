@@ -1,6 +1,11 @@
 
+body {
+  background-color: #ffecba;
+  font-family: 'Cormorant Garamond', serif;
+  
+}
 /*colors: https://coolors.co/805e55-ffecba-e0958a-6b8d8c-24110b-e7b570-be6857*/:nth-of-type() {
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);
+   background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Cormorant Garamond', serif;
@@ -86,6 +91,7 @@
 }
 
   .has-border {
+    ;
   
   
   }
@@ -101,6 +107,7 @@
     grid-row-start: 4;
     grid-column-start: 2;
     margin-left: 80px;
+    background-color: 818585 ;
     
   }
 
