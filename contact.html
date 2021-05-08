@@ -1,18 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <label>Email</label>
-    <input type="text" name="email" id="email" required>
+    <link rel="stylesheet" href="contactStyles.css">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
 
-    <label for="comments">Comments</label>
-    <textarea maxlength="500" minlength="20" placeholder="comments"></textarea>
-    
-    <label 
+</head>
+
+<body>
+    <main>
+        <div class="backgroundTop">
+            this is just a color
+        </div>
+        <h1> Contact</h1>
+        <form>
+            <div class="leftForm">
+                <div class="email">
+                    <label>Email</label><br>
+                    <input type="text" name="email" id="email" required>
+                </div>
+                <div class="comments">
+                    <label for="comments">Send Me a Message</label><br>
+                    <textarea maxlength="500" minlength="20" placeholder="comments"></textarea>
+                </div>
+                <div class="contact">
+                    Would you like a response from me? <br>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="contact">
+                    <div class="contact">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="contact">
+                    </div>
+                </div>
+            </div>
+            <div class="rightForm">
+                How did you find me?
+                <div>
+                    <input type="checkbox" id="classmate" name="classmate" value="classmate">
+                    <label for="classmate">Classmate</label>
+                    
+                </div>
+                <div>
+                    <input type="checkbox" id="resume" name="resume" value="resume">
+                    <label for="resume">Resume Submission</label>
+                    
+                </div>
+                <div>
+                    <input type="checkbox" id="linkedIn" name="linkedIn" value="linkedIn">
+                    <label for="linkedIn">LinkedIn</label>
+                    
+                </div>
+                <div>
+                    <input type="checkbox" id="ACA" name="ACA" value="ACA">
+                    <label for="ACA">Coding Academy Rec</label>
+                  
+                </div>
+                <div>
+                    <label for="bdayWish"> Birth Date</label>
+                    <input type="date" id="bdayWish" name="bdayWish" value="1936-05-07" min="1900-01-01"
+                        max="2021-12-31">
+                </div>
+            </div>
+
+            </div>
+            </div>
+        </form>
+    </main>
+
 
 </body>
+
 </html>

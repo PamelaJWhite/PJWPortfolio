@@ -1,7 +1,9 @@
+
 body {
     margin: 0;
     background-color: #ffecba;
     font-family: 'Cormorant Garamond', serif;
+    min-width: 1450px;
   }
     
   header {
@@ -15,10 +17,9 @@ body {
     justify-content: flex-end;
     height: 88px;
     align-items: flex-end;
-    
-  
-  
+    padding-right: 20px;
   }
+
  .topLinks{
     color: #805e55;
     margin: 1% 1%;
@@ -29,20 +30,24 @@ body {
     background: none;
     padding: 4px;
     display: flex;
-  align-items: flex-end;
+    align-items: flex-end;
     justify-content: flex-end;
   }
-main {
-    width: 2000px;
+
+ main {
+    width: 100%;
+    min-width: 1450px;
     height: 1200px;
     display: grid;
-    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 2fr 1fr 7fr 3fr 1fr;
-    grid-template-columns: 3fr 2fr 6fr 4fr 3fr 1fr 12fr 4fr 3fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 2fr 1fr 7fr 3fr 5fr;
+    grid-template-columns: 3fr 2fr 10fr 2.5fr 1.5fr 12fr 4fr 3fr;
     color: #805e55;
+    margin: 0 auto;
 }
 
 #backgroundBottom {
     background-color: #e0958a;
+    width: vw;
     grid-row: 7/-1;
     grid-column: 1/-1;
 }
@@ -52,26 +57,28 @@ h1 {
     grid-column: 3/4;
     font-size: 85px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 #imageBox {
     grid-row: 6/9;
-    grid-column: 2/5;
+    grid-column: 2/4;
     background-color: #6b8d8c;
+    height: 500px;
+    width: 500px;
 }
 
-#quote {
+.quote {
     grid-row: 2/5;
-    grid-column: 6/8;
+    grid-column: 5/8;
     font-style: italic;
     font-size: 55px;
-
 }
 #mainArticle {
     grid-row: 8/10;
-    grid-column: 7/9;
+    grid-column: 6/8;
     color: #24110b;
+    margin-left: 10px;
 }
 
 h2 {
@@ -88,26 +95,130 @@ ul {
     justify-content: space-evenly;
 }
 
-#bottomNav {
-border: 1px solid blue;
+.bottomNav {
     display: flex;
     justify-content: flex-start;
     height: 120px;
     background-color: #e0958a;
 }
-/*when I use "768" as the max-width, it doesn't change on my monitor until 576 at 960 it changes at 728. at 100 it changes at 748*/
-@media (max-width: 768px) {
-    body {
-        background-color: green;
 
+
+
+@media (max-width: 768px) {
+   body {
+       min-width: 715px;
     }
-    main {
-        width: 770px;
-        height: 1026px;
+
+    #topNav {
+        height: 44px;
+    }
+
+    .bottomNav {
+        height: 44px;
+        width: 100%;
         display: grid;
-        grid-template-rows: 
-        grid-template-columns: 
+        grid-template-columns: 50% 50%;
     }
+    #leftList {
+        display: flex;
+        flex-direction: row;
+    }
+    #rightList {
+        display: flex; 
+        flex-direction: row;
+    }
+    .mainContain {
+        width: 100%;
+        min-width: 715px;
+        height: 934px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 3fr 3fr 2fr 3fr 9fr 2fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr 1fr 2fr 8fr 2fr 14fr;
+    }
+    #backgroundBottom {
+        grid-row: 7/-1;
+    }
+    h1 {
+        grid-column: 3/5;
+        grid-row: 3/4;
+        font-size: 48px;
+        margin: 0;
+    }
+
+    #imageBox {
+        grid-column: 2/7;
+        grid-row: 6/8;
+        background-color: #6b8d8c;
+        height: 285px;
+        width: 285px;
+        }
+
+
+    .quote {
+        grid-row: 2/5;
+        grid-column: 6/8;
+        font-size: 24px;
+    }
+
+    #mainArticle {
+        grid-row: 9/10;
+        grid-column: 4/8;
+    }
+    h2 {
+        font-size: 48px;
+        margin: 0;
+    }
+    .articleText {
+        font-size: 20px;
+    }
+} 
+
+@media (max-width:376px) {
+    body {
+        min-width: 0;
+    }
+    header {
+        display: block;
+    }
+    .mainContain {
+        height: 1100px;
+        min-width: 0;
+        grid-template-rows: 1fr 2fr 3fr 1fr 3fr 9fr 1fr 14fr;
+        grid-template-columns: 100%;
+    }
+    h1 {
+        grid-row: 2/3;
+        grid-column: 1/-1;
+        margin-left:20px;
+        
+    }
+    .quote {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+        font-size: 20px; 
+        margin-left: 100px;
+        margin-right: 18px;
+    }
+    #imageBox {
+        grid-row: 5/7;
+        grid-column: 1/-1;
+        margin: 0 auto;
+    }
+
+    #backgroundBottom {
+        grid-row: 6/-1;
+        grid-column: 1/-1;
+    }
+    #mainArticle {
+        grid-row: 8/9;
+        grid-column: 1/-1;
+        margin: 0 20px;
+        font-size: 18px;
+    }
+  ul {
+     padding-inline-start: 0px;
+  }
+
 }
 
 
