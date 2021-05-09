@@ -8,7 +8,7 @@ header {
     display: grid;
     grid-template-columns: 40% 60%;
     background-color: #e0958a;
-    min-width: 1450;
+    min-width: 1430px;
     
   }
     
