@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="aboutStyles.css">
 
     <title>About Me</title>
@@ -13,56 +14,70 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&display=swap" rel="stylesheet">
 </head>
-<header>
-    <nav id="topNav">
-        <a class="topLinks" href="">about</a>
-        <a class="topLinks" href="">resume</a>
-        <a class="topLinks" href="">blog</a>
-        <a class="topLinks" href="">contact</a>
-
-    </nav>
-</header>
 
 <body>
+    <header>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="resume.html">resume</a>
+            <a href="">blog</a>
+            <a href="contact.html">contact</a>
 
+        </nav>
+    </header>
 
-    <main class="mainContain" id="mainContainer">
-        <div id="backgroundBottom">
-        </div>
+    <div class="outerBackgroundWrapper">
+        <div class="outerBackground">background color</div>
+        <main class="mainContain" id="mainContainer">
+            <section class="backgroundColorImgWrapper">
+                <div class="backgroundBottom">this is a color</div>
+                <div class="imageBox">
+                    <img src="./profilePics/goatYoga.png">
+                </div>
+            </section>
+            <h1>Hey Y'all</h1>
 
-        <h1>Hey Y'all</h1>
-        <div id="imageBox"></div>
-        <article class="quote">a mission statement or quote goes here Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </article>
-        <article id="mainArticle">
-            <h2>Heading</h2>
-            <p class="articleText">Bacon kielbasa burgdoggen landjaeger buffalo. Landjaeger ham tongue pancetta,
-                pastrami sirloin beef ribs. Capicola corned beef doner short ribs hamburger short loin. Filet mignon
-                tongue prosciutto pork belly pork jowl salami pancetta capicola. Ball tip brisket cupim meatloaf sirloin
-                tongue, pastrami porchetta. Kevin pig hamburger biltong short ribs tail picanha porchetta jowl venison
-                pastrami leberkas tenderloin ham hock.</p>
-            <p class="articleText">Spicy jalapeno eu irure dolore short ribs shank, hamburger est pork belly porchetta
-                in boudin jerky tongue. Buffalo deserunt andouille magna. Swine dolor ut sunt eiusmod bresaola
-                exercitation dolore frankfurter ground round cillum enim venison ball tip magna. Adipisicing nulla minim
-                doner laborum. Ball tip in duis, incididunt labore short ribs landjaeger magna cupim aliqua pariatur
-                meatball.
+            <article class="quote">a mission statement or quote goes here Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit.
+            </article>
+            <article class="mainArticle">
+                <h2>Heading</h2>
+                <p class="articleText">Bacon kielbasa burgdoggen landjaeger buffalo. Landjaeger ham tongue pancetta,
+                    pastrami sirloin beef ribs. Capicola corned beef doner short ribs hamburger short loin. Filet mignon
+                    tongue prosciutto pork belly pork jowl salami pancetta capicola. Ball tip brisket cupim meatloaf
+                    sirloin
+                    tongue, pastrami porchetta. Kevin pig hamburger biltong short ribs tail picanha porchetta jowl
+                    venison
+                    pastrami leberkas tenderloin ham hock.</p>
+                <p class="articleText">Spicy jalapeno eu irure dolore short ribs shank, hamburger est pork belly
+                    porchetta
+                    in boudin jerky tongue. Buffalo deserunt andouille magna. Swine dolor ut sunt eiusmod bresaola
+                    exercitation dolore frankfurter ground round cillum enim venison ball tip magna. Adipisicing nulla
+                    minim
+                    doner laborum. Ball tip in duis, incididunt labore short ribs landjaeger magna cupim aliqua pariatur
+                    meatball.
 
-            </p>
-        </article>
-    </main>
+                </p>
+            </article>
+            </section>
+        </main>
+
+    </div>
+    <footer>
+        <nav class="bottomNav">
+            <ul id=leftList>
+                <li><a href="home">home</a></li>
+                <li><a href="blog">blog</a></li>
+                <li><a href="contact">contact</a></li>
+            </ul>
+            <ul id=rightList>
+                <li><a href="linkedin.com">LinkedIn</a></li>
+                <li><a href="github.com">GitHub</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
-<footer>
-    <nav class="bottomNav">
-        <ul id=leftList>
-            <li><a href="">home</a></li>
-            <li><a href="">blog</a></li>
-            <li><a href="">contact</a></li>
-        </ul>
-        <ul id=rightList>
-            <li><a href="">LinkedIn</a></li>
-            <li><a href="">GitHub</a></li>
-        </ul>
-    </nav>
-</footer>
 
 </html>
