@@ -2,6 +2,8 @@
 body {
     background-color: #ffecba;
     font-family: 'Cormorant Garamond', serif;
+ 
+    /* font-family: 'Bodoni Moda', serif; */
   }
   
     
@@ -17,6 +19,7 @@ body {
     border: 1px solid darkgreen;
     height: 88px;
     align-items: flex-end;
+    /* font-family: 'Bodoni Moda', serif; */
   }
   
   nav > a {
@@ -32,4 +35,14 @@ body {
     align-items: flex-end;
     justify-content: flex-end;
     border: 1px solid darkorchid;
+    text-decoration: none;
   }
+  nav> a:hover {
+    font-weight: bold;
+  
+  }
+  .bottomNav {
+    display: flex;
+    justify-content: flex-start;
+    height: 160px;
+}
