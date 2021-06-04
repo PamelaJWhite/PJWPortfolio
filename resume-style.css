@@ -1,0 +1,149 @@
+/*colors: https://coolors.co/805e55-ffecba-e0958a-6b8d8c-24110b-e7b570-be6857*/
+body {
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #24110b;
+    display: grid;
+}
+* {
+    box-sizing: border-box;
+}
+.mainContainer {
+    height: 100%;
+    display: grid;
+    justify-content:center;
+    /*grid-template-columns: 1fr 5fr 1fr 4fr 6fr 8fr;*/
+    /*grid-template-rows: .5fr .75fr 3fr .75fr .75fr 5fr 6fr 4fr 5fr 7fr;*/
+    grid-template-columns: 44px 220px 44px 176px 264px 352px;
+    grid-template-rows: 22px 33px 132px 33px 33px 225px 264px 100px 200px 350px 33px 22px; 
+   
+}
+#colorLeft {
+    background-color: #C0A588; /*rgb(104, 103, 103);*/
+    grid-column: 1/5;
+    grid-row: 1/-1;
+}
+#colorTop {
+    background-color:#e0958a;
+    grid-row: 3/4;
+    grid-column: 1/-1;
+}
+#colorBottom {
+    background-color:#e0958a;
+    grid-row: -3/-2;
+    grid-column: 1/-1;
+}
+#image { 
+    background-color: #6b8d8c;
+    grid-row: 2/5;
+    grid-column: 2/3;
+
+}
+#name {
+    background-color:#e0958a;
+    color: #ffecba;
+    grid-row: 3/4;
+    grid-column: 4/6;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding-left: 85px;
+    padding-top: 10px;
+}
+h1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 55px;
+}
+#name > h3 {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 25px;
+    color: #805e55;
+}
+
+#profile {
+    grid-row: 6/7;
+    grid-column: 1/5;
+    display: flex; 
+    flex-direction: column; 
+}
+h2 {
+    color: #6b8d8c;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+
+}
+h3 {
+    font-size: 30px;
+    margin: 30px 0 10px 0;
+    color: #24110b;
+}
+h4 {
+    font-size: 25px;
+    margin: 10px 0 10px 8px;
+    color: #805e55;
+}
+ul, p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #24110b;
+    list-style-type: square;
+}
+
+#expertise {
+        grid-row: 7/8;
+        grid-column: 1/5;
+    }
+
+#contact {
+    grid-row: 8/10;
+    grid-column: 1/5;
+
+}
+#contactList {
+    list-style-type: none;
+    margin: 16px 0;
+    padding: 0;
+}
+#interests {
+    grid-row: 10/11;
+    grid-column: 1/5;
+}
+#rightColor {
+    background-color: #ffecba;
+    grid-column: 5/-1;
+    grid-row: 1/-1;
+}
+#employment {
+    grid-row: 6/9;
+    grid-column: 5/-1;
+}
+#education {
+    grid-row: 9/-1;
+    grid-column: 5/-1;
+}
+
+.leftPieces, .rightPieces {
+    margin: 0 35px 20px 35px;
+}
+
+/*
+section:nth-of-type(2){ 
+    background-color: red;
+    grid-column:3/4;
+    grid-column:2/3;
+}
+section:nth-of-type(3){ 
+    background-color: yellow;
+    grid-column:4/6
+    grid-column:2/3;
+}
+section:nth-of-type(4){ 
+    background-color: orange;
+    grid-column: 1/2;
+    grid-column: 3/4;
+}*/

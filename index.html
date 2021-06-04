@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pamela J. White</title>
+   </head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="gallery.html">gallery</a>
+            <a href="contact.html">contact</a>
+            <a href="resume.html">resume</a>
+
+        </nav>
+    </header>
+    <main>
+        <div class="rightBackground">color</div>
+        <div class="contentWrapper">
+
+            <div class="nameBackgroundColor">
+                <div class="backgroundSquare">
+                    this is just a color
+                </div>
+                <h1>Pamela J. White</h1>
+            </div>
+
+            <div class="picTitle">
+                <img src="./profilePics/myProfilePic.jpg" class="profile-pic" alt="Head shot of Me">
+                <h2>
+                    Student of Web Development
+                </h2>
+            </div>
+            <article class="selfStatement">
+                I am... Lorem ipsum dolor sit amet
+              
+            </article>
+        </div>
+    </main>
+    <footer>
+        <nav class="bottomNav">
+            <ul id=leftList>
+                <li><a href="home">home</a></li>
+                <li><a href="blog">blog</a></li>
+                <li><a href="contact">contact</a></li>
+            </ul>
+            <ul id=rightList>
+                <li><a href="linkedin.com">LinkedIn</a></li>
+                <li><a href="github.com">GitHub</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        const getRemoteData = () => {
+        fetch('https://jsonplaceholder.typicode.com/todos/1')
+          .then(response => response.json())
+          .then(json => console.log("json"))
+      }
+    </script>
+</body>
+</html>

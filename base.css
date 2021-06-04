@@ -1,0 +1,48 @@
+/*colors: https://coolors.co/805e55-ffecba-e0958a-6b8d8c-24110b-e7b570-be6857:nth-of-type()*/
+body {
+    background-color: #ffecba;
+    font-family: 'Cormorant Garamond', serif;
+ 
+    /* font-family: 'Bodoni Moda', serif; */
+  }
+  
+    
+  header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+    
+    nav {
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid darkgreen;
+    height: 88px;
+    align-items: flex-end;
+    /* font-family: 'Bodoni Moda', serif; */
+  }
+  
+  nav > a {
+    color: #805e55;
+    margin: 1% 1%;
+    height: 50px;
+    width: 20%;
+    font-size: 20px;
+    text-align: center;
+    background: none;
+    padding: 4px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border: 1px solid darkorchid;
+    text-decoration: none;
+  }
+  nav> a:hover {
+    font-weight: bold;
+  
+  }
+  .bottomNav {
+    display: flex;
+    justify-content: flex-start;
+    height: 160px;
+}
