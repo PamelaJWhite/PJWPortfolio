@@ -41,6 +41,10 @@ body {
     font-weight: bold;
   
   }
+  img {
+    border-radius: 1em;
+    box-shadow: 2px 2px 5px #24110b;
+}
   .bottomNav {
     display: flex;
     justify-content: flex-start;
