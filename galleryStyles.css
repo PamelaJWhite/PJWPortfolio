@@ -20,7 +20,7 @@
     display: grid;
     grid-template-rows: 60px .25fr 91px  1fr 1fr 1fr .5fr;
     grid-template-columns: 3fr 2fr 10fr 2.5fr 5fr 4fr 3fr;
-    color: #e0958a; 
+    color:  #805e55; 
 }
 .backgroundColorImgWrapper {
     grid-row: 1/-1;
@@ -212,9 +212,7 @@ ul {
     body {
         min-width: 0;
     }
-    header {
-        display: block;
-    }
+    
     .mainContain {
         /* height: 1100px; */
         min-width: 0;

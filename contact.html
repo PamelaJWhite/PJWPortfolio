@@ -4,32 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contactStyles.css">
-    <title>Contact</title>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./reset.css">  
+    <link rel="stylesheet" href = "reset.css">
     <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="galleryStyles.css">
+    <link rel="stylesheet" href="contactStyles.css">
     <title>Contact</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
+  
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="index.html">home</a>
-            <a href="about.html">about</a>
-            <a href="gallery.html">gallery</a>
-            <a href="contact.html">contact</a>
-            <a href="resume.html">resume</a>
-
+        <nav class="topNav">
+            <!--<a href="#home" class="active">Logo</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+            </a>
+            <div class="topNavLinks" ID="topNavLinks">
+                <a href="./index.html">home</a>
+                <a href="./about.html">about</a>
+                <a href="./gallery.html">gallery</a>
+                <a href="./contact.html">contact</a>
+                <a href="./resume.html">resume</a>
+            </div>
+            
         </nav>
     </header>
-    <main class="mainContainer">
+<div class="outerBackgroundWrapper">
+    <div class="outerBackground">background color</div>
+    <main class="mainContain" id="mainContainer">
+        <h1> Contact</h1>
+        <section class="backgroundColorImgWrapper">
+
+            <!-- <div class="galleryContainer"> -->
+                <form class="form">
+                    <div class="leftForm">
+                       
+                       <div class="name"><label for="firstName">Name</label> <br>
+                            <label for="lastName"></label>
+                            <input type="text" name="firstName" id="firstName" placeholder="First">
+                            <input type="text" name="lastName" id="lastName" placeholder="Last">
+                        </div> 
+                        
+        
+        
+                        <div class="email">
+        
+                            <label for="email">Email</label> <br>
+                            <input type="text" name="email" id="email" placeholder="Email" required>
+                        </div> 
+                        <div class="comments">
+                            <label for="comments">Send Me a Message</label><br>
+                            <textarea maxlength="500" minlength="20" placeholder="Comments"></textarea>
+                        </div>
+                        <button class="send">Submit
+                        </button>
+                    </div>
+                    <!-- <div class="rightForm">
+                        <div>
+                            <div>How did you find me?</div>
+                            <div>
+        
+                                <input type="checkbox" id="classmate" name="classmate" value="classmate">
+                                <label class="find" for="classmate">Classmate</label>
+        
+                            
+        
+                            </div>
+                            <div>
+                                <input class="find" type="checkbox" id="resume" name="resume" value="resume">
+                                <label for="resume">Resume Submission</label>
+        
+                            </div>
+                            <div>
+                                <input class="find" type="checkbox" id="linkedIn" name="linkedIn" value="linkedIn">
+                                <label for="linkedIn">LinkedIn</label>
+        
+                            </div>
+                            <div>
+                                <input class="checkbox" type="checkbox" id="ACA" name="ACA" value="ACA">
+                                <label class="find" for="ACA">Coding Academy Rec</label>
+        
+                            </div>
+                        </div>
+                       <div class="birthday">
+                            <div>Would you like a birthday greeting?</div>
+                            <div class="enterBirthday">If so, enter your birthday below!</div>
+                            <div>
+                                <label for="bdayWish"> Birth Date</label>
+                                <input type="date" id="bdayWish" name="bdayWish" value="1936-05-07" min="1900-01-01"
+                                    max="2021-12-31">
+                            </div>
+                        </div>
+                    </div>
+        
+                    </div>
+                    </div> -->
+                </form>
+            <!-- </div> -->
+        </section>
+
+
+
+    </main>
+
+</div>
+    <!-- <main class="mainContainer">
         <div class="backgroundTop">
         </div>
         <h1> Contact</h1>
@@ -102,7 +187,7 @@
             </div>
             </div>
         </form>
-    </main>
+    </main> -->
     <footer>
         <nav class="bottomNav">
             <ul id=leftList>
@@ -116,7 +201,7 @@
             </ul>
         </nav>
     </footer>
-
+    <script src="./app.js"></script>
 </body>
 
 </html>

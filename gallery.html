@@ -23,12 +23,22 @@
 
 <body>
     <header>
-        <nav>
-            <a href="index.html">home</a>
-            <a href="about.html">about</a>
-            <a href="gallery.html">gallery</a>
-            <a href="contact.html">contact</a>
-            <a href="resume.html">resume</a>
+        <nav class="topNav">
+            <!--<a href="#home" class="active">Logo</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+            </a>
+            <div class="topNavLinks" ID="topNavLinks">
+                <a href="./index.html">home</a>
+                <a href="./about.html">about</a>
+                <a href="./gallery.html">gallery</a>
+                <a href="./contact.html">contact</a>
+                <a href="./resume.html">resume</a>
+            </div>
+            
         </nav>
     </header>
 
@@ -103,6 +113,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="./app.js"></script>
 </body>
 
 </html>
