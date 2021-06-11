@@ -3,6 +3,7 @@
     grid-template-rows: 300px 100px 2fr;
     grid-template-columns: 1fr;
 }
+
 .outerBackground {
     background-color: #805e55;
     width: vw;
@@ -12,7 +13,7 @@
  main {
      grid-row: 1/-1;
      grid-column: 1/-1;
-     border: 1px solid hotpink;
+     /* border: 1px solid hotpink; */
     width: 100%;
     max-width: 1435px;
     min-width: 1024px;

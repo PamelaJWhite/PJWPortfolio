@@ -12,7 +12,7 @@ main {
   }
 
 .contentWrapper {
-  border: solid 1px seagreen;
+  /* border: solid 1px seagreen; */
   grid-column: 1/-1;
   grid-row: 1/-1;
   display: grid;
@@ -24,7 +24,7 @@ main {
   .nameBackgroundColor {
   grid-column: 2/-1;
   grid-row: 1/-1;
-  border: solid 2px blue;
+  /* border: solid 2px blue; */
   display: grid;
   grid-template-columns: 188px 400px 1fr;
   grid-template-rows: 1fr 1fr 6fr;
@@ -35,24 +35,23 @@ main {
   h1 {
     color: #805e55;
     margin: 3% auto;
-    border: 2px solid #1940A9;
+    /* border: 2px solid #1940A9; */
     grid-column: 1/3;
     grid-row: 2/3;
     padding-left: 5px;
     font-weight: bold;
     align-content: left;
-    font-size: 75px;
   }
 
   .backgroundSquare {
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
     background-color: #e0958a;
     grid-column: 2/-1;
     grid-row: 1/-1;
   }
 
 .picTitle {
-  border: 1px solid slateblue;
+  /* border: 1px solid slateblue; */
   grid-column: 6/8;
   grid-row: 3/5;
   width: 400px;
@@ -71,12 +70,12 @@ main {
     font-weight: 400;
   }
   .portfolioButton {
-    background-color: #818585 ;
+    /* background-color: #818585 ; */
     grid-column: 6/8;
     grid-row: 8/9;
   }
   .selfStatement {
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
     font-size: larger;
     grid-column: 8/-1;
     grid-row: 4/5;
@@ -98,7 +97,7 @@ main {
     background: transparent;
     padding: 20px;
     text-align: center;
-    color: #6b8d8c;
+    /* color: #6b8d8c; */
     letter-spacing: 16px;
     font-style: italic;
     font-family: 'Cormorant Garamond', serif;
@@ -123,7 +122,7 @@ main {
       /* grid-column: 1/-1; */
     }
     .contentWrapper {
-      border: dotted 1px orange;
+      /* border: dotted 1px orange; */
       grid-template-columns:  1fr 55px 27px 55px 83px 2fr 9fr 10fr 1fr;
     }
     .selfStatement {
@@ -132,8 +131,8 @@ main {
     }
     
     h1 {
-      font-size: 60px;
       margin-left: 112px;
+      font-size:
     }
     .profile-pic {
       width: 350px;
@@ -145,7 +144,7 @@ main {
 
     /* -----------------------Main----------------------- */
     #contentWrapper {
-      border: 3px dotted red;
+      /* border: 3px dotted red; */
       grid-template-columns: 20% 80%;
       grid-template-rows: 1fr 2fr 1fr;
       width: 100%;
@@ -164,7 +163,6 @@ main {
       min-width: ;
     } */
     h1 {
-      font-size: 38px;
       margin: 0px;
       margin-left: -43px;
       grid-column: 2/-1;
@@ -172,16 +170,25 @@ main {
     }
 
     .picTitle {
-      grid-column: 2/-1;
+      border: 1px dotted chartreuse;
+      grid-column: 1/-1;
       grid-row: 2/3;
-      margin-left: 25px;
+      margin-left: 20;
       margin-top: 20px;
+      justify-content: center;
+      width: 100%;
     }
     
     .profile-pic {
-      width: 300px;
-      height: 300px;
+      width: 275px;
+      height: 275px;
+
     }
+    h2 {
+      display: none;
+    }
+
+   
 
     .selfStatement {
       grid-column: 1/-1;
@@ -194,7 +201,6 @@ main {
       padding: 0 20px;
       justify-self: center;
     }
-    
     
   }
   
