@@ -4,14 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ResumePJW</title>
-    <link rel="stylesheet" href="./resume-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./resume-style.css">
+    <title>ResumePJW</title>
+    
+    
 </head>
 
 <body>
+    <header>
+        <nav class="topNav">
+            <!--<a href="#home" class="active">Logo</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+            </a>
+            <div class="topNavLinks" ID="topNavLinks">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="gallery.html">gallery</a>
+                <a href="contact.html">contact</a>
+                <a href="resume.html">resume</a>
+            </div>
+            
+        </nav>
+    </header>
     <main class="mainContainer">
         <section id="colorLeft"></section>
         <section id="rightColor"></section>
@@ -96,8 +119,28 @@
 
         </section>
 
-    </main>
-
+    
+    <footer>
+        <nav class="bottomNav">
+            <ul id=leftList>
+                <li class="leftListItem"><a href="./index.html">
+                    <img class="socialMediaImg" id="leftListImg1" src="./profilePics/homeIcon.png">
+                </a></li>
+                <li class="leftListItem"><a href="./contact.html">
+                    <img class="socialMediaImg" id="leftListImg2" src="./email-icon--clipart-best-22.png">
+                </a></li>
+            </ul>
+            <ul id=rightList>
+                <li class="rightListItem"><a href="https://github.com/pjwhite08">
+                    <img class="socialMediaImg" src="./profilePics/GitHub-Mark-32px.png">
+                </a></li>
+                <li class="rightListItem"><a href="https://www.linkedin.com/in/pamela-white-969b23ab/">
+                    <img class="socialMediaImg" src="./profilePics/icons8-linkedin-24.png">
+                </a></li>
+            </ul>
+        </nav>
+    </footer>
+</main>
 </body>
 
 </html>

@@ -130,11 +130,12 @@ ul {
 }
 
 .bottomNav {
-    display: flex;
-    justify-content: flex-start;
-    height: 120px;
     background-color: #e0958a;
 }
+.socialMediaImg {
+    background-color: #e0958a;
+}
+
 
 
 /* @media (max-width: 1024px) {

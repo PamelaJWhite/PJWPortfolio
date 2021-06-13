@@ -69,11 +69,7 @@ main {
     align-items:flex-end;
     font-weight: 400;
   }
-  .portfolioButton {
-    /* background-color: #818585 ; */
-    grid-column: 6/8;
-    grid-row: 8/9;
-  }
+ 
   .selfStatement {
     /* border: 1px solid teal; */
     font-size: larger;
@@ -85,24 +81,8 @@ main {
     font-style: italic;
     margin-right: 30px;
   }
-  /* .small-text {
-    color: white;
-    font-size: 10px;
-    margin: 3% auto;
-  } */
-  button {
-    margin: 3% auto;
-    font-size: 20px;
-    border-radius: 25px;
-    background: transparent;
-    padding: 20px;
-    text-align: center;
-    /* color: #6b8d8c; */
-    letter-spacing: 16px;
-    font-style: italic;
-    font-family: 'Cormorant Garamond', serif;
-  }
- 
+  
+  
   .profile-pic {
     width: 400px;
     height: 400px;
@@ -188,18 +168,17 @@ main {
       display: none;
     }
 
-   
-
     .selfStatement {
       grid-column: 1/-1;
       grid-row: 3/-1;
       display: flex;
-      justify-content: center;
-      margin-top: 40px;
-      margin-right: 0;
+      text-align: center;
+      /* justify-content: center; */
+      margin: .3em 0 .3em 0;
       font-size: 32px;
-      padding: 0 20px;
+      padding: 0 .3em;
       justify-self: center;
+      align-self: center;
     }
     
   }

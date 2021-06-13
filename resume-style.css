@@ -130,6 +130,14 @@ ul, p {
 .leftPieces, .rightPieces {
     margin: 0 35px 20px 35px;
 }
+.bottomNav {
+    background-color:  #ffecba;
+    width: 1100px;
+}
+ #leftList, #rightList {
+     list-style-type: none;
+ }
+
 
 /*
 section:nth-of-type(2){ 
