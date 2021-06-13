@@ -5,19 +5,14 @@ body {
     background-color: #24110b;
     display: grid;
 }
-* {
-    box-sizing: border-box;
-}
 .mainContainer {
     height: 100%;
     display: grid;
     justify-content:center;
-    /*grid-template-columns: 1fr 5fr 1fr 4fr 6fr 8fr;*/
-    /*grid-template-rows: .5fr .75fr 3fr .75fr .75fr 5fr 6fr 4fr 5fr 7fr;*/
     grid-template-columns: 44px 220px 44px 176px 264px 352px;
-    grid-template-rows: 22px 33px 132px 33px 33px 225px 264px 100px 200px 350px 33px 22px; 
-   
+    grid-template-rows: 22px 33px 132px 33px 33px 225px 264px 100px 200px 350px 33px 22px;    
 }
+
 #colorLeft {
     background-color: #C0A588; /*rgb(104, 103, 103);*/
     grid-column: 1/5;
@@ -137,7 +132,81 @@ ul, p {
  #leftList, #rightList {
      list-style-type: none;
  }
+ footer {
+     display: flex;
+     justify-content: center;
+ }
+ .smFooter {
+     display: none;
+ }
 
+@media (max-width: 1024px) {
+    #mainContainer {
+        border: 1px solid gold;
+        grid-template-columns: 4% 20% 4% 16% 24% 32%;
+        grid-template-rows: 1.6% 2.3% 132px 2.3% 3% 18% 19% 6% 10% 25% 1fr; 
+    }
+    #name {
+        padding-top: 0px;
+        grid-row: 3/4;
+        grid-column: 4/7;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        background-color: none;
+        
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 24px;
+    }  
+    h3 {
+        font-size: 20px;
+
+    }  
+
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+     
+    li {
+        font-size: 16px;
+    }
+    #image {
+        width: 200px;
+    }
+    #employment {
+        grid-row: 6/7;
+    }
+    #contact {
+            grid-row: 8/9;
+            grid-column: 1/5;
+        }
+        .leftPieces, .rightPieces {
+            margin: 0 35px 0px 35px;
+        }
+    .bottomNav {
+        width: 100%;
+        }
+        
+    footer {
+        grid-row: -2/-1;
+        grid-column: 1/-1;
+    }
+    .lgFooter {
+        display: none;
+    }
+    .smFooter {
+        display: flex;
+    }
+}
 
 /*
 section:nth-of-type(2){ 
