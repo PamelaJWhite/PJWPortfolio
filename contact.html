@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href = "reset.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="contactStyles.css">
     <title>Contact</title>
-  
+
 </head>
 
 <body>
@@ -32,179 +34,63 @@
                 <a href="./contact.html">contact</a>
                 <a href="./resume.html">resume</a>
             </div>
-            
+
         </nav>
     </header>
-<div class="outerBackgroundWrapper">
-    <div class="outerBackground">background color</div>
-    <main class="mainContain" id="mainContainer">
-        <h1> Contact</h1>
-        <section class="backgroundColorImgWrapper">
-
-            <!-- <div class="galleryContainer"> -->
+    <div class="outerBackgroundWrapper">
+        <div class="outerBackground"></div>
+        <main class="mainContain" id="mainContainer">
+            <h1> Contact</h1>
+            <section class="backgroundColorImgWrapper">
                 <form class="form">
                     <div class="leftForm">
-                       
-                       <div class="name"><label for="firstName">Name</label> <br>
+
+                        <div class="name"><label for="firstName">Name</label> <br>
                             <label for="lastName"></label>
                             <input type="text" name="firstName" id="firstName" placeholder="First">
                             <input type="text" name="lastName" id="lastName" placeholder="Last">
-                        </div> 
-                        
-        
-        
+                        </div>
+
                         <div class="email">
-        
                             <label for="email">Email</label> <br>
                             <input type="text" name="email" id="email" placeholder="Email" required>
-                        </div> 
+                        </div>
+
                         <div class="comments">
                             <label for="comments">Send Me a Message</label><br>
                             <textarea maxlength="500" minlength="20" placeholder="Comments"></textarea>
                         </div>
+                        
                         <button class="send">Submit
                         </button>
                     </div>
-                    <!-- <div class="rightForm">
-                        <div>
-                            <div>How did you find me?</div>
-                            <div>
-        
-                                <input type="checkbox" id="classmate" name="classmate" value="classmate">
-                                <label class="find" for="classmate">Classmate</label>
-        
-                            
-        
-                            </div>
-                            <div>
-                                <input class="find" type="checkbox" id="resume" name="resume" value="resume">
-                                <label for="resume">Resume Submission</label>
-        
-                            </div>
-                            <div>
-                                <input class="find" type="checkbox" id="linkedIn" name="linkedIn" value="linkedIn">
-                                <label for="linkedIn">LinkedIn</label>
-        
-                            </div>
-                            <div>
-                                <input class="checkbox" type="checkbox" id="ACA" name="ACA" value="ACA">
-                                <label class="find" for="ACA">Coding Academy Rec</label>
-        
-                            </div>
-                        </div>
-                       <div class="birthday">
-                            <div>Would you like a birthday greeting?</div>
-                            <div class="enterBirthday">If so, enter your birthday below!</div>
-                            <div>
-                                <label for="bdayWish"> Birth Date</label>
-                                <input type="date" id="bdayWish" name="bdayWish" value="1936-05-07" min="1900-01-01"
-                                    max="2021-12-31">
-                            </div>
-                        </div>
-                    </div>
-        
-                    </div>
-                    </div> -->
+
                 </form>
-            <!-- </div> -->
-        </section>
+            </section>
 
 
 
-    </main>
+        </main>
 
-</div>
-    <!-- <main class="mainContainer">
-        <div class="backgroundTop">
-        </div>
-        <h1> Contact</h1>
-        <form>
-            <div class="leftForm">
-               <div class="name"><label for="firstName">Name</label> <br>
-                    <label for="lastName"></label>
-                    <input type="text" name="firstName" id="firstName" placeholder="First">
-                    <input type="text" name="lastName" id="lastName" placeholder="Last">
-                </div> 
+    </div>
 
-
-                <div class="email">
-
-                    <label for="email">Email</label> <br>
-                    <input type="text" name="email" id="email" placeholder="Email" required>
-                </div> 
-                <div class="comments">
-                    <label for="comments">Send Me a Message</label><br>
-                    <textarea maxlength="500" minlength="20" placeholder="Comments"></textarea>
-                </div>
-                <div class="contact">
-                    <div>Would you like a response from me? </div>
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="yes" name="contact">
-                    <div class="contact">
-                        <label for="no">No</label>
-                        <input type="radio" id="no" name="contact">
-                    </div>
-                </div>
-            </div>
-            <div class="rightForm">
-                <div>
-                    <div>How did you find me?</div>
-                    <div>
-
-                        <input type="checkbox" id="classmate" name="classmate" value="classmate">
-                        <label class="find" for="classmate">Classmate</label>
-
-                    
-
-                    </div>
-                    <div>
-                        <input class="find" type="checkbox" id="resume" name="resume" value="resume">
-                        <label for="resume">Resume Submission</label>
-
-                    </div>
-                    <div>
-                        <input class="find" type="checkbox" id="linkedIn" name="linkedIn" value="linkedIn">
-                        <label for="linkedIn">LinkedIn</label>
-
-                    </div>
-                    <div>
-                        <input class="checkbox" type="checkbox" id="ACA" name="ACA" value="ACA">
-                        <label class="find" for="ACA">Coding Academy Rec</label>
-
-                    </div>
-                </div>
-               <div class="birthday">
-                    <div>Would you like a birthday greeting?</div>
-                    <div class="enterBirthday">If so, enter your birthday below!</div>
-                    <div>
-                        <label for="bdayWish"> Birth Date</label>
-                        <input type="date" id="bdayWish" name="bdayWish" value="1936-05-07" min="1900-01-01"
-                            max="2021-12-31">
-                    </div>
-                </div>
-            </div>
-
-            </div>
-            </div>
-        </form>
-    </main> -->
     <footer>
         <nav class="bottomNav">
             <ul id=leftList>
                 <li class="leftListItem"><a href="./index.html">
-                    <img class="socialMediaImg" id="leftListImg1" src="./profilePics/homeIcon.png">
-                </a></li>
+                        <img class="socialMediaImg" id="leftListImg1" src="./profilePics/homeIcon.png">
+                    </a></li>
                 <li class="leftListItem"><a href="./contact.html">
-                    <img class="socialMediaImg" id="leftListImg2" src="./email-icon--clipart-best-22.png">
-                </a></li>
+                        <img class="socialMediaImg" id="leftListImg2" src="./email-icon--clipart-best-22.png">
+                    </a></li>
             </ul>
             <ul id=rightList>
                 <li class="rightListItem"><a href="https://github.com/pjwhite08">
-                    <img class="socialMediaImg" src="./profilePics/GitHub-Mark-32px.png">
-                </a></li>
+                        <img class="socialMediaImg" src="./profilePics/GitHub-Mark-32px.png">
+                    </a></li>
                 <li class="rightListItem"><a href="https://www.linkedin.com/in/pamela-white-969b23ab/">
-                    <img class="socialMediaImg" src="./profilePics/icons8-linkedin-24.png">
-                </a></li>
+                        <img class="socialMediaImg" src="./profilePics/icons8-linkedin-24.png">
+                    </a></li>
             </ul>
         </nav>
     </footer>

@@ -3,16 +3,17 @@
     grid-template-rows: 280px 120px 2fr;
     grid-template-columns: 1fr;
 }
+
 .outerBackground {
     background-color: #e0958a;
     width: vw;
     grid-row: 3/-1;
     grid-column: 1/-1;
 }
+
  main {
-     grid-row: 1/-1;
-     grid-column: 1/-1;
-     border: 1px solid hotpink;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
     width: 100%;
     max-width: 1435px;
     min-width: 1024px;
@@ -22,6 +23,7 @@
     grid-template-columns: 3fr 2fr 10fr 2.5fr 5fr 4fr 3fr;
     color:  #805e55; 
 }
+
 .backgroundColorImgWrapper {
     grid-row: 1/-1;
     grid-column: 1/-1;
@@ -29,6 +31,7 @@
     grid-template-rows: 280px 120px 2fr;
     grid-template-columns: 25% 75%;
 }
+
 .backgroundBottom {
     background-color: #e0958a;
     width: vw;
@@ -44,23 +47,17 @@ form {
     justify-content: flex-start;
     font-size: 23px;
 }
-/* form {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    font-size: 25px;
-    color: #805e55;
-} */
 
 .leftForm {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 .name, .email, .comments, .send {
     margin-bottom: 17px;
 }
+
 input {
     font-family: inherit;
     font-style: italic;
@@ -78,6 +75,7 @@ input {
     width: 46%;
     line-height: 25px;
 }
+
 #email {
     width: 95%;
     line-height: 25px;
@@ -92,6 +90,7 @@ textarea {
     background-color: #FFF9EB;
     border: none;
 }
+
 .send {
     font-size: 23px;
     font-family: 'Cormorant Garamond', serif;
@@ -100,17 +99,6 @@ textarea {
     border: none;
     color:  #805e55;
 }
-
-/* .rightForm {
-    grid-column: 3/4;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-} */
-/* .enterBirthday {
-    font-size: 18px;
-    margin-left: 10px;
-} */
 
 h1 {
     grid-row: 3/4;
@@ -121,7 +109,6 @@ h1 {
     padding: none;
 }
 
-
 ul {
     list-style-type: none;
     display: flex;
@@ -132,224 +119,18 @@ ul {
 .bottomNav {
     background-color: #e0958a;
 }
+
 .socialMediaImg {
     background-color: #e0958a;
 }
 
 
-
-/* @media (max-width: 1024px) {
-   body {
-       min-width: 700px;
-    }
-    #topNav {
-        height: 44px;
-    }
-    .mainContain {
-        width: 100%;
-        min-width: 700px;
-        height: 100%; 
-        display: grid;
-        grid-template-columns: 2fr 1fr 3fr 3fr 2fr 3fr 9fr 2fr;
-        grid-template-rows: .75fr .75fr 1.5fr 1.6fr .4fr 1fr 1fr 1fr;
-    }
-    .backgroundColorImgWrapper {
-       
-        grid-template-rows: .6fr 100px 2.15fr;
-     
-    }
-    #backgroundBottom {
-        grid-row: 7/-1;
-    }
-    h1 {
-        grid-column: 3/6;
-        grid-row: 1/3;
-        font-size: 48px;
-        margin-top: 40px;
-    }
-    #imageBox {
-        grid-column: 2/7;
-        grid-row: 6/8;
-        background-color: #6b8d8c;
-        height: 285px;
-        width: 285px;
-        }
-    .quote {
-        grid-row-start: 2;
-        grid-column: 6/8;
-        font-size: 28px;
-        padding-bottom: 50px;
-    }
-    .mainArticle {
-        grid-row: 5/-1;
-        grid-column: 4/8;
-        margin-top: 50px;
-    }
-    h2 {
-        font-size: 48px;
-        margin: 0;
-    }
-    .articleText {
-        font-size: 21px;
-        margin-right: 15px;
-        margin-bottom: 30px;
-        margin-top: 35px;
-    }
-    .bottomNav {
-        height: 66px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-    #leftList {
-        display: flex;
-        flex-direction: row;
-    }
-    #rightList {
-        display: flex; 
-        flex-direction: row;
-    }
-} 
-
-@media (max-width:699px) {
-    body {
-        min-width: 0;
-    }
-    header {
-        display: block;
-    }
-    .mainContain {
-        /* height: 1100px; */
-       /* min-width: 0;
-        grid-template-rows: 1fr 2fr 3fr 1fr 3fr 9fr 1fr 14fr;
-        grid-template-columns: 1fr;
-    }
-    h1 {
-        grid-row: 2/3;
-        grid-column: 1/-1;
-        justify-content: center;
-    }
-    .quote {
-        grid-row: 3/6;
-        grid-column: 1/-1;
-        font-size: 25px; 
-        text-align: center;
-        align-items: center;
-        padding-top: 50px;
-    }
-    .imageBox {
-        grid-row: 2/7;
-        grid-column: 1/-1;
-        margin: 0 auto;
-        width: 50vw;
-
-    }
-    image {
-        max-width: 100%;
-        height: auto;
-    }
-    #backgroundBottom {
-        grid-row: 6/-1;
-        grid-column: 1/-1;
-    }
-    .mainArticle {
-        grid-row: 7/-1;
-        grid-column: 1/-1;
-        margin: 0 20px;
-        font-size: 18px;
-    }
-  ul {
-     padding-inline-start: 0px;
-  }
-
-} */
-
-
-/* body {
-    background-color: #ffecba;
-    padding: 0;
-    margin:0;
-}
-   
-header {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    background-color: #ffecba;
-    min-width: 1450;
-  }
-    
-    #topNav {
-    grid-column: 2;
-    display: flex;
-    justify-content: flex-end;
-    height: 88px;
-    align-items: flex-end;
-    padding-right: 20px;
-
-  }
-
- .topLinks{
-    color: #805e55;
-    margin: 1% 1%;
-    height: 50px;
-    width: 20%;
-    font-size: 20px;
-    text-align: center;
-    background: none;
-    padding: 4px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-
-main {
-    display: grid;
-    grid-template-rows: .75fr 2fr;
-    grid-template-columns: 3fr 7fr 1fr;
-    font-family: 'Cormorant Garamond', serif;
-    height: 900px;
-    width: auto;
-    min-width: 1430px;
-    background-color: #e0958a;;
-    
-}
-.backgroundTop {
-    background-color: #ffecba; 
-    grid-row: 1/2;
-    grid-column: 1/-1;
-}
-
-H1 {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    display: flex;
-    align-items: flex-end;
-    color: #24110b;
-}
-
-
-ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.bottomNav {
-    display: flex;
-    justify-content: flex-start;
-    height: 120px;  
-}
-*/
-
-
 @media (max-width: 699px) { 
    
     .outerBackgroundWrapper {
-   
-        grid-template-rows: 140px 120px 2fr;
-        
+        grid-template-rows: 140px 120px 2fr;  
     }
+
     main {
         height: auto;
         min-width: 0px;
@@ -359,6 +140,7 @@ ul {
 #mainContainer{
     grid-template-columns: 1fr;
 }
+
 h1 {
     grid-column: 1/-1;
     grid-row: 1/2;
@@ -370,15 +152,19 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 140px 120px 2fr;
 }
+
    form {
        grid-column: 1/-1;
        justify-content: center;
        margin-bottom: 30px;
    }
+
    #email, textarea, .send {
        width: 100%;
    }
+
    #firstName, #lastName {
        width: 49%;
    }
+   
 } 
