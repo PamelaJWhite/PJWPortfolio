@@ -7,6 +7,7 @@ body {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-column: 2;
+    margin-right: 1.5em;
   }
 
   .topNavLinks {
@@ -117,6 +118,7 @@ ul {
   overflow: hidden;
   flex-direction: column;
   align-items: right;
+  margin-right: 0px;
 }
 
  #topNavLinks {
@@ -127,8 +129,9 @@ ul {
   color: #805e55;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   display: block;
+  margin-right: 10px;
 }
 
 .topNav a.icon {

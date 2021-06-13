@@ -63,16 +63,19 @@ input {
     font-style: italic;
     font-size: 20px;
     background-color: #FFF9EB;
-    border: none;
+    border: 1px solid transparent;
 }
 
+input:hover {
+    border: 1px solid #805e55;
+}
 #firstName {
-    width: 45%; 
+    width: 46%; 
     line-height: 25px;
 }
 
 #lastName {
-    width: 46%;
+    width: 47%;
     line-height: 25px;
 }
 
@@ -88,7 +91,11 @@ textarea {
     font-size: 20px;
     font-family: 'Cormorant Garamond', serif;
     background-color: #FFF9EB;
-    border: none;
+    border: 1px solid #e0958a;
+}
+
+textarea:hover {
+    border: 1px solid #805e55; 
 }
 
 .send {
@@ -96,8 +103,14 @@ textarea {
     font-family: 'Cormorant Garamond', serif;
     width: 96%;
     background-color :#FFF9EB;
-    border: none;
+    border: 1px solid #e0958a;
     color:  #805e55;
+}
+
+.send:hover {
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid  #805e55;
 }
 
 h1 {
