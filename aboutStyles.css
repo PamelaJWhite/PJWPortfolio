@@ -162,26 +162,27 @@ h2 {
         min-width: 0;
     }
     .outerBackgroundWrapper {
-        max-height: 1285px;
+        /* max-height: 1285px; */
     }
     .mainContain {
         min-width: 0;
-        grid-template-rows: .75fr .75fr 350px 1fr;
-        grid-template-columns: 1fr;
+        /* grid-template-rows: .75fr .75fr 350px 1fr;
+        grid-template-columns: 1fr; */
+        display: flex; 
+        flex-direction: column;
+        height: auto;
     }
     h1 {
-        grid-row: 1/2;
-        grid-column: 1/-1;
         justify-content: center;
+        margin-top: -550px
     }
     .quote {
-        grid-row: 2/3;
-        grid-column: 1/-1;
         font-size: 25px; 
         text-align: center;
         align-items: center;
-        padding-top: 30px;
-        margin-right: 0;
+        padding-top: 1em;
+        margin-right: 2em;
+        margin-left: 2em;
     }
     .author {
         font-size: 22px;
@@ -207,9 +208,7 @@ h2 {
         grid-column: 1/-1;
     }
     .mainArticle {
-        grid-row: 4/-1;
-        grid-column: 1/-1;
-        margin: 0 30px 30px 30px;
+        margin: 350px 30px 30px 30px;
         font-size: 18px;
         text-align: center;
     }

@@ -136,6 +136,7 @@ ul {
 
 
 @media (max-width: 1024px) {
+    
    body {
        min-width: 700px;
     }
@@ -158,11 +159,9 @@ grid-template-rows: 200px 100px 1fr
         font-size: 48px;
         margin-top: 60px
     }
-   .socialMediaImg {
-    background-color: #e0958a;
 }
 
-} 
+
 
 @media (max-width:699px) {
     body {
@@ -178,8 +177,11 @@ grid-template-rows: 200px 100px 1fr
         justify-content: center;
     }
 
+}
    .galleryImage {
+       display: flex;
        max-height: 250px;
+       
    }
     
     

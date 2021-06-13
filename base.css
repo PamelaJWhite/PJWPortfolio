@@ -3,7 +3,6 @@ body {
     background-color: #ffecba;
     font-family: 'Cormorant Garamond', serif;
   }
-  
     .topNav {
     display: grid;
     grid-template-columns: 40% 60%;
@@ -113,7 +112,6 @@ ul {
   overflow: hidden;
   flex-direction: column;
   align-items: right;
-  /* border: 2px dotted peru; */
 }
  #topNavLinks {
   display: none;

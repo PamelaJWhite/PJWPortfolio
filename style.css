@@ -88,10 +88,15 @@ main {
     height: 400px;
   }
   
-  /* ________________________________________________
-  ________________________________________________ */
+  /*------------1024px---------------------*/
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1024px) 
+  {
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
     .rightBackground {
       display: none;
     }
@@ -120,28 +125,28 @@ main {
     }
   }
 
+/* -----------------------699px----------------------- */
   @media (max-width: 699px) {
-
-    /* -----------------------Main----------------------- */
+   body {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+   }
     #contentWrapper {
-      /* border: 3px dotted red; */
       grid-template-columns: 20% 80%;
-      grid-template-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1.5fr;
       width: 100%;
       min-width: 0px;
     }
     
     #nameBackgroundColor {
-      border: 3px dotted green;
       grid-template-columns: 20% 80%;
       grid-column: 1/-1;
       grid-row: 1/-1;
       width: 100%;
       min-width: 0px;
     }
-    /* .backgroundSquare {
-      min-width: ;
-    } */
+    
     h1 {
       margin: 0px;
       margin-left: -43px;
@@ -150,7 +155,6 @@ main {
     }
 
     .picTitle {
-      border: 1px dotted chartreuse;
       grid-column: 1/-1;
       grid-row: 2/3;
       margin-left: 20;
@@ -160,8 +164,8 @@ main {
     }
     
     .profile-pic {
-      width: 275px;
-      height: 275px;
+      width: 280px;
+      height: 280px;
 
     }
     h2 {
@@ -179,6 +183,11 @@ main {
       padding: 0 .3em;
       justify-self: center;
       align-self: center;
+    }
+    footer {
+      display: flex;
+      justify-content: center;
+      align-content: flex-end;
     }
     
   }
