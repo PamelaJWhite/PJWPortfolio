@@ -6,7 +6,7 @@
 /* width */
 
 .outerBackground {
-    background-color: #805e55;
+    background-color: #e0958a;
     width: vw;
     grid-row: 3/-1;
     grid-column: 1/-1;
@@ -41,17 +41,19 @@
     grid-row: 2/-1;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
 .galleryImage {
     height:275px;
-    width: auto;
+    width: 295px;
+    
     /* border: 1px solid green; */
     margin: 15px;
     display: block;
     position: relative;
     text-align: center;
+    margin-bottom: 50px;
    
 }
 img {
@@ -94,7 +96,7 @@ img {
     right: 0; 
     width: 100%;
     height: 100%; */
-    background-color: rgba(224, 149, 138, 0.75); 
+    background-color: rgba(36, 17, 11, 0.90); 
     transition-property: all;
     transition-duration: .5s;
     transition-timing-function: ease;
@@ -127,11 +129,11 @@ ul {
 }
 
 .bottomNav {
-    background-color: #805e55;
+    background-color:#e0958a;
     margin-top: 0px;
 }
 .socialMediaImg {
-    background-color: #805e55;
+    background-color:  #e0958a;
 }
 
 
@@ -176,10 +178,12 @@ grid-template-rows: 200px 100px 1fr
         grid-row: 1/2;
         grid-column: 1/-1;
         justify-content: center;
+        font-size: 38px;
     }
 
    .galleryImage {
        display: flex;
+       justify-content: center;
        max-height: 250px; 
    }
     

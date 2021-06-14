@@ -22,7 +22,7 @@ body {
     margin: 1% 1%;
     height: 50px;
     width: 20%;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     background: none;
     padding: 4px;
@@ -154,7 +154,7 @@ ul {
 
 .bars {
   width: 30px;
-  height: 3px;
+  height: 4px;
   background-color: #805e55;
   margin: 6px 0;
 }
