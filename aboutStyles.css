@@ -94,6 +94,9 @@ h2 {
     background-color: #e0958a;
 }
 
+.aboutSpan {
+    font-weight: bold;
+}
 
 @media (max-width: 1024px) {
    body {
