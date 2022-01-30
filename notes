@@ -1,0 +1,4 @@
+great work! glad you stuck with this color scheme. one thing I'd suggest is making the site full height. no scroll (except for maybe the projects page). I think you can get rid of the footer all together and put the social icons in the .main grid. maybe add a new column with a fixed width (80px) and keep the other two 1fr. first thing to add though is this:
+.main {height: calc(100vh - 88px);}
+what this says is 'make .main div 100% of the view height minus the 88 pixels that is the header/nav.
+then remove footer. add socials to corner bottom of .main.
