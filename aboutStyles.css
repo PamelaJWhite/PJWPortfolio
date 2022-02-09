@@ -78,6 +78,10 @@ h1 {
     margin-left: 10px;
 }
 
+a:visited {
+  color:#24110b;
+}
+
 h2 {
     font-size: 45px;
     margin-right: 60px;

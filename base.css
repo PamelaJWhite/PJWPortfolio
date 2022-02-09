@@ -13,7 +13,7 @@ body {
   .topNavLinks {
     display: flex;
     justify-content: flex-end;
-    height: 88px;
+    height: 60px;
     align-items: flex-end;
   }
 
