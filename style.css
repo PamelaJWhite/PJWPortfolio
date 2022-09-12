@@ -64,7 +64,7 @@ main {
     align-items:flex-end;
     font-weight: 400;
   }
- 
+
   .selfStatement {
     font-size: larger;
     grid-column: 8/-1;
@@ -81,7 +81,7 @@ main {
     height: 400px;
   }
   
- 
+
   @media (max-width: 1024px) {
     body {
       display: flex;

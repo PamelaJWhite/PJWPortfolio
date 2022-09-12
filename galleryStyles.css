@@ -14,7 +14,6 @@
 main {
   grid-row: 1/-1;
   grid-column: 1/-1;
-  /* border: 1px solid hotpink; */
   width: 100%;
   max-width: 1435px;
   height: 100%;
@@ -23,6 +22,7 @@ main {
   grid-template-columns: 3fr 21fr;
   color: #805e55;
 }
+
 .backgroundColorImgWrapper {
   grid-row: 1/-1;
   grid-column: 1/-1;
@@ -53,35 +53,61 @@ main {
   display: grid;
   grid-template-columns: 40% 20% 40%;
   grid-template-rows: 40% 40% 20%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  text-align: center;
-  margin-bottom: 50px; */
 }
 
 .imgCont {
-  grid-row-start: 1/2;
+  /* opacity: .25; */
+  grid-row: 1/-1;
+  grid-column: 1/-1;
   object-position: bottom right;
-  height: 100%;
-  width: 100%;
+  height: 40%;
+  width: 40%;
   border: 5px solid;
   background-color: #ffecba;
-  /* border: 1px solid gold; */
-  /* background-color: pink; */
-  /* background-image: url("profilePics/picapathPic.png"); */
+/* transition */
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transform: translate (-50%, -50%);
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.imgCont:hover{
+  height: 100%;
+  width: 100%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
 }
 
 .galleryImg {
   filter: grayscale(100%);
-  opacity: 0.5;
+  opacity: 0.25;
   /* in order for object-fit to work, the image needs height and width */
   width:100%;
   height:100%;
   object-fit: cover;
   object-position:0% 0%;
+
+  /* transition */
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
 }
+
+.galleryImg:hover{
+  
+  opacity: 100;
+  filter: none;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
 
 .skillsCont {
   color: #ffecba;
@@ -104,9 +130,10 @@ main {
 .projectTitle {
   color:#ffecba;
   margin-top: 0;
-  margin-left: 3%;
+  /* margin-left: 3%; */
   grid-column: 1/-1;
   grid-row-start: 2;
+  justify-content: center;
 }
 
 .bottomRow {
@@ -119,78 +146,86 @@ main {
   font-size: 25px;
 }
 
+.bottomRow:active{
+  border: 6px solid;
+}
+
 .site {
   grid-column: 1/2;
   grid-row:3/4;
 }
 
 .story {
-  grid-column: 3/4;
+  /* grid-column: 3/4;
   grid-row: 3/4;
-  
-  
+  height: 100%;
+  width: 100%; */
+
+  grid-column: 1/-1;
+  grid-row: 1/-1; 
+  height: 20%;
+  width: 40%;
+  margin-left: 60%;
+  margin-top: 55.5% 
 }
+
+
+
+/* .story.clicked .description {
+  display: block;
+} */
+
+/* .storyLabel{ */
+  /* display: none; */
+
+/* } */
 
 .description {
-  height: 250px;
-  width: 250px;
-  /* margin-left: 25px; */
-  /* margin-top: 25px; */
-  font-weight: bold;
-  padding-left: 30px;
-  padding-right: 30px;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  background:#ffecba;
+  height: 20%;
+  width: 40%;
+  margin-left: 60%;
+  margin-top: 55.5%;
+  z-index: -1;
+  border: 5px solid;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-decoration: none;
-  background-color: #805e55;
-  color: #ffecba;
+  align-items: center;
+  text-align: center;
 }
 
-.overlay {
-  border: 1px solid green;
-  object-fit: scale-down;
-  height: 300px;
-  width: 300px;
-  /* padding-left: 30px;
-  padding-right: 30px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+
+.descClicked {
+  /* display: block; */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  z-index: 2;
   transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-  transition-delay: 0s;
-  opacity: 0;
-  color: white;
-  font-size: 18px;
-  position: absolute;
-  /* top: 50%; */
-  /* left: 50%; */
-  transform: translate (-50%, -50%);
-  text-align: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.overlay:hover {
-  /* opacity: 0;  */
-  opacity: 100;
-  font-size: 50px;
-  /* position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; 
-    width: 100%;
-    height: 100%; */
-  transition-property: all;
-  transition-duration: 0.5s;
+  transition-duration: 1s;
   transition-timing-function: ease;
-  transition-delay: 0s;
-  color: #ffecba;
+}
+
+.text {
+  z-index: -1;
+  color:#ffecba;
+  display: none;
+  transition-property: color;
+  transition-duration: 10s;
+  transition-timing-function: ease;
+}
+.textClicked {
+  display: flex;
+  z-index: 2;
+  color:#805e55;
+  transition-property: all;
+  transition-duration: 10s;
+  transition-timing-function: ease;
 }
 
 h1 {

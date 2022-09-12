@@ -46,60 +46,100 @@
       <main class="mainContain" id="mainContainer">
         <h1>My Work</h1>
         <section class="backgroundColorImgWrapper">
-          <div class="galleryContainer">
-            <div class="galleryDisplay">
+          <div id="galleryContainer" class="galleryContainer">
+
+
+            <!-- <div class="galleryDisplay">
+        
+              <button
+                id="one"
+                class="bottomRow story"
+                onclick="storyClick(this)"
+              >
+                <div class="storyLabel">story</div>
+              </button>
               <div class="imgCont">
                 <img class="galleryImg" src="profilePics/picapathPic.png" />
               </div>
-              <div class="skillsCont">
-                <div class="skills">React</div>
-                <div class="skills">JavaScript</div>
-                <div class="skills">CSS</div>
-                <div class="skills">HTML</div>
+              <div id="desone" class="description" onclick="closeDesc(this)">
+                <div class="text">Social skills are tough! My capstone project lets users experience social consequences in a safe, fun, and informative way.</div>
+                <p id="textone" class="text">
+                  Social skills are tough! My capstone project lets users
+                  experience social consequences in a safe, fun, and informative
+                  way.
+                </p>
               </div>
-              <h1 class="projectTitle">Pick-A-Path</h1>
-              <div class="bottomRow site">site</div>
-              <div class="bottomRow story">story</div>
+            </div> -->
 
+<!-- #2 - -->
+            <div class="galleryDisplay">
+              <div class="skillsCont">
+                <div class="skills">HTML</div>
+                <div class="skills">JavaScript</div>
+                <div class="skills">API</div>
+                <div class="skills">CSS</div>
+              </div>
+              <h1 class="projectTitle">Robots</h1>
+              <button class="bottomRow site">
+                <a href="https://pamelajwhite.github.io/JS211_RobotSearch/"> site </a>
+              </button>
+              <button
+                id="1"
+                class="bottomRow story"
+                onclick="storyClick(this)"
+              >
+                <div class="storyLabel">story</div>
+              </button>
+              <div class="imgCont">
+                <img class="galleryImg" src="./profilePics/seeingRobotsPic.png" />
+              </div>
+              <div id="des1" class="description" onclick="closeDesc(this)">
+                <p id="text1" class="text">
+                  Creating a GUI clicked! I learned to grab HTML elements and play with them in JavaScript. <br/> Additionally, as I was showing it to a friend, he said, "It would be funny if it got blurrier the more you clicked". I thought, "I can do that!" And I did. 
+                </p>
+              </div>
+            </div>
 
-              
-              <!-- <img class="src="profilePics/picapathPic.png" /> -->
-              <!-- <a class="description" href="https://pjw-pick-a-path.herokuapp.com/"
-                >
-                <img class="overlay" src="profilePics/picapathPic.png" />
-                Pick-a-Path
-              </a> -->
-            </div>
-            <div class="galleryDisplay">
-              <img src="profilePics/capstoneImgLg.png" />
-              <a class="overlay" href="https://pjw-pick-a-path.herokuapp.com/"
-                >Pick-a-Path
-              </a>
-            </div>
-            <div class="galleryDisplay">
-              <img src="profilePics/picapathPic.png" />
-              <a class="overlay" href="https://pjw-pick-a-path.herokuapp.com/"
-                >Pick-a-Path
-              </a>
-            </div>
-            <div class="galleryDisplay">
-              <img src="./profilePics/seeingRobotsPic.png" />
-              <a
-                class="overlay"
-                href="https://pamelajwhite.github.io/JS211_RobotSearch/"
-                >Seeing <br />
-                Robots
-              </a>
-            </div>
-            <div class="galleryDisplay">
+<!-- ------------3------------------ -->
+            <!-- <div class="galleryDisplay">
+              <div class="skillsCont">
+                <div class="skills">HTML</div>
+                <div class="skills">JavaScript</div>
+                <div class="skills">Bootstrap</div>
+                <div class="skills">CSS</div>
+              </div>
+              <h1 class="projectTitle">Robots</h1>
+              <button class="bottomRow site">
+                <a href="https://pamelajwhite.github.io/JS211_RobotSearch/"> site </a>
+              </button>
+              <button
+                id="two"
+                class="bottomRow story"
+                onclick="storyClick(this)"
+              >
+                <div class="storyLabel">story</div>
+              </button>
+              <div class="imgCont">
+                <img class="galleryImg" src="./profilePics/zospace.png" />
+              </div>
+              <div id="desthree" class="description" onclick="closeDesc(this)">
+                <p id="textthree" class="text">
+                  Given some comps, our team of four put together the front end for this site. I was responsible for the testimonials page. My challenge was the carousel. On mobile, those buttons did NOT want to go above the carousel. But with a little creative problem solving, they made the move!
+                </p>
+              </div>
+            </div> -->
+
+            
+          
+            <!-- <div class="galleryDisplay">
               <img src="./profilePics/hairSalonPic.png" />
               <a
                 class="overlay"
                 href="https://pamelajwhite.github.io/hairSalonWebsite/"
                 >Hair Salon
               </a>
-            </div>
-
+            </div> -->
+            <!-- 
             <div class="galleryDisplay">
               <img
                 class="responsiveSiteImg"
@@ -112,18 +152,18 @@
                 >Responsive <br />
                 Site
               </a>
-            </div>
+            </div> -->
 
-            <div class="galleryDisplay">
+            <!-- <div class="galleryDisplay">
               <img src="./profilePics/ticTacToePic.png" />
               <a
                 class="overlay"
                 href="https://pamelajwhite.github.io/TicTacToe-101/"
                 >Tic Tac Toe
               </a>
-            </div>
+            </div> -->
 
-            <div class="galleryDisplay">
+            <!-- <div class="galleryDisplay">
               <img src="./profilePics/evenOddListPic.png" />
               <a
                 class="overlay"
@@ -132,17 +172,17 @@
                 Word <br />
                 List
               </a>
-            </div>
+            </div> -->
 
-            <div class="galleryDisplay">
+            <!-- <div class="galleryDisplay">
               <img src="./profilePics/calculatorPic.png" />
               <a
                 class="overlay"
                 href="https://pamelajwhite.github.io/calculator-app-101/"
                 >Calculator
               </a>
-            </div>
-            <div class="galleryDisplay">
+            </div> -->
+            <!-- <div class="galleryDisplay">
               <img src="./profilePics/NASALandingPagePic.png" />
               <a
                 class="overlay"
@@ -150,7 +190,7 @@
                 >Landing <br />
                 Page
               </a>
-            </div>
+            </div> -->
           </div>
         </section>
       </main>
