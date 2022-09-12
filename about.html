@@ -4,41 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="reset.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="aboutStyles.css">
 
-    <title>About Me</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&display=swap" rel="stylesheet">
+    <title>PJW About Me</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="index.html">home</a>
-            <a href="about.html">about</a>
-            <a href="gallery.html">gallery</a>
-            <a href="contact.html">contact</a>
-            <a href="resume.html">resume</a>
-
-
+        <nav class="topNav">
+            <!--<a href="#home" class="active">Logo</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+            </a>
+            <div class="topNavLinks" ID="topNavLinks">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="gallery.html">gallery</a>
+                <!-- <a href="contact.html">contact</a> -->
+                <a href="resume.html">resumé</a>
+            </div>
+            
         </nav>
     </header>
 
     <div class="outerBackgroundWrapper">
-        <div class="outerBackground">background color</div>
+        <div class="outerBackground"></div>
         <main class="mainContain" id="mainContainer">
             <section class="backgroundColorImgWrapper">
-                <div class="backgroundBottom">this is a color</div>
+                <div class="backgroundBottom"></div>
                 <div class="imageBox">
-                    <img src="./profilePics/goatYoga.png">
+                    <img class="goatYoga" src="./profilePics/goatYoga.png">
                 </div>
             </section>
             <h1>Hey Y'all</h1>
@@ -46,21 +52,12 @@
             <article class="quote">The nature of the relative world is mutability. <div class="author">~ Bhagavad Gita</div>
             </article>
             <article class="mainArticle">
-                <h2>Heading</h2>
-                <p class="articleText">Bacon kielbasa burgdoggen landjaeger buffalo. Landjaeger ham tongue pancetta,
-                    pastrami sirloin beef ribs. Capicola corned beef doner short ribs hamburger short loin. Filet mignon
-                    tongue prosciutto pork belly pork jowl salami pancetta capicola. Ball tip brisket cupim meatloaf
-                    sirloin
-                    tongue, pastrami porchetta. Kevin pig hamburger biltong short ribs tail picanha porchetta jowl
-                    venison
-                    pastrami leberkas tenderloin ham hock.</p>
-                <p class="articleText">Spicy jalapeno eu irure dolore short ribs shank, hamburger est pork belly
-                    porchetta
-                    in boudin jerky tongue. Buffalo deserunt andouille magna. Swine dolor ut sunt eiusmod bresaola
-                    exercitation dolore frankfurter ground round cillum enim venison ball tip magna. Adipisicing nulla
-                    minim
-                    doner laborum. Ball tip in duis, incididunt labore short ribs landjaeger magna cupim aliqua pariatur
-                    meatball.
+                <h2>A,B,Cs</h2>
+                <p class="articleText"><span class="aboutSpan">Always Learning.</span> In just under a year, I learned HTML, CSS, JavaScript, React, node JS and Express, 
+                    and have used them to build, among other things, my <a href="https://pjw-pick-a-path.herokuapp.com/"> pet project.</a> </p>
+                <p class="articleText"><span class="aboutSpan">Balance is Everything.</span> Process or product? Behavior analysis and Yoga have taught me both. Web Development has allowed me to do both. 
+                </p>
+                <p class="articleText"><span class="aboutSpan">Creative Problem Solving.</span> My style of problem solving comes from my scientific research and analytic background. Think outside the box and change one variable at a time. 
 
                 </p>
             </article>
@@ -71,16 +68,24 @@
     <footer>
         <nav class="bottomNav">
             <ul id=leftList>
-                <li><a href="home">home</a></li>
-                <li><a href="blog">blog</a></li>
-                <li><a href="contact">contact</a></li>
+                <li class="leftListItem"><a href="./index.html">
+                    <img class="socialMediaImg" id="leftListImg1" src="./profilePics/homeIcon.png">
+                </a></li>
+                <li class="leftListItem"><a href="./contact.html">
+                    <img class="socialMediaImg" id="leftListImg2" src="./profilePics/email-icon--clipart-best-22.png">
+                </a></li>
             </ul>
             <ul id=rightList>
-                <li><a href="linkedin.com">LinkedIn</a></li>
-                <li><a href="github.com">GitHub</a></li>
+                <li class="rightListItem"><a href="https://github.com/pjwhite08">
+                    <img class="socialMediaImg" src="./profilePics/GitHub-Mark-32px.png">
+                </a></li>
+                <li class="rightListItem"><a href="https://www.linkedin.com/in/pamela-white-969b23ab/">
+                    <img class="socialMediaImg" src="./profilePics/icons8-linkedin-24.png">
+                </a></li>
             </ul>
         </nav>
     </footer>
+    <script src="./app.js"></script>
 </body>
 
 </html>

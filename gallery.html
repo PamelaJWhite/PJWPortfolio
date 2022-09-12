@@ -1,108 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="galleryStyles.css" />
 
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="galleryStyles.css">
+    <title>PJW Gallery</title>
+  </head>
 
-    <title>Gallery</title>
-
-
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">home</a>
-            <a href="about.html">about</a>
-            <a href="gallery.html">gallery</a>
-            <a href="contact.html">contact</a>
-            <a href="resume.html">resume</a>
-        </nav>
+      <nav class="topNav">
+        <!--<a href="#home" class="active">Logo</a> -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+          <div class="bars"></div>
+          <div class="bars"></div>
+          <div class="bars"></div>
+        </a>
+        <div class="topNavLinks" id="topNavLinks">
+          <a href="./index.html">home</a>
+          <a href="./about.html">about</a>
+          <a href="./gallery.html">gallery</a>
+          <!-- <a href="./contact.html">contact</a> -->
+          <a href="./resume.html">resumé</a>
+        </div>
+      </nav>
     </header>
 
     <div class="outerBackgroundWrapper">
-        <div class="outerBackground">background color</div>
-        <main class="mainContain" id="mainContainer">
-            <h1>My Work</h1>
-            <section class="backgroundColorImgWrapper">
-
-                <!-- <div class="backgroundBottom">this is a color</div> -->
-
-                <!-- <div class="imageBox">
-                    <img src="./profilePics/goatYoga.png">
-                </div> -->
-                <div class="galleryContainer">
-                    <div class="galleryImage">
-                        <img src="./profilePics/hairSalonPic.png">
-                            <a class="overlay" href="https://pjwhite08.github.io/hairSalonWebsite/">Hair Salon
-                            </a>
-                    </div>
+      <div class="outerBackground"></div>
+      <main class="mainContain" id="mainContainer">
+        <h1>My Work</h1>
+        <section class="backgroundColorImgWrapper">
+          <div id="galleryContainer" class="galleryContainer">
 
 
+            <!-- <div class="galleryDisplay">
+        
+              <button
+                id="one"
+                class="bottomRow story"
+                onclick="storyClick(this)"
+              >
+                <div class="storyLabel">story</div>
+              </button>
+              <div class="imgCont">
+                <img class="galleryImg" src="profilePics/picapathPic.png" />
+              </div>
+              <div id="desone" class="description" onclick="closeDesc(this)">
+                <div class="text">Social skills are tough! My capstone project lets users experience social consequences in a safe, fun, and informative way.</div>
+                <p id="textone" class="text">
+                  Social skills are tough! My capstone project lets users
+                  experience social consequences in a safe, fun, and informative
+                  way.
+                </p>
+              </div>
+            </div> -->
 
+<!-- #2 - -->
+            <div class="galleryDisplay">
+              <div class="skillsCont">
+                <div class="skills">HTML</div>
+                <div class="skills">JavaScript</div>
+                <div class="skills">API</div>
+                <div class="skills">CSS</div>
+              </div>
+              <h1 class="projectTitle">Robots</h1>
+              <button class="bottomRow site">
+                <a href="https://pamelajwhite.github.io/JS211_RobotSearch/"> site </a>
+              </button>
+              <button
+                id="1"
+                class="bottomRow story"
+                onclick="storyClick(this)"
+              >
+                <div class="storyLabel">story</div>
+              </button>
+              <div class="imgCont">
+                <img class="galleryImg" src="./profilePics/seeingRobotsPic.png" />
+              </div>
+              <div id="des1" class="description" onclick="closeDesc(this)">
+                <p id="text1" class="text">
+                  Creating a GUI clicked! I learned to grab HTML elements and play with them in JavaScript. <br/> Additionally, as I was showing it to a friend, he said, "It would be funny if it got blurrier the more you clicked". I thought, "I can do that!" And I did. 
+                </p>
+              </div>
+            </div>
 
-                    
-                    <div class="galleryImage">
-                        <img class="responsiveSiteImg" src="./profilePics/responsivePagePic.png">
+<!-- ------------3------------------ -->
+            <!-- <div class="galleryDisplay">
+              <div class="skillsCont">
+                <div class="skills">HTML</div>
+                <div class="skills">JavaScript</div>
+                <div class="skills">Bootstrap</div>
+                <div class="skills">CSS</div>
+              </div>
+              <h1 class="projectTitle">Robots</h1>
+              <button class="bottomRow site">
+                <a href="https://pamelajwhite.github.io/JS211_RobotSearch/"> site </a>
+              </button>
+              <button
+                id="two"
+                class="bottomRow story"
+                onclick="storyClick(this)"
+              >
+                <div class="storyLabel">story</div>
+              </button>
+              <div class="imgCont">
+                <img class="galleryImg" src="./profilePics/zospace.png" />
+              </div>
+              <div id="desthree" class="description" onclick="closeDesc(this)">
+                <p id="textthree" class="text">
+                  Given some comps, our team of four put together the front end for this site. I was responsible for the testimonials page. My challenge was the carousel. On mobile, those buttons did NOT want to go above the carousel. But with a little creative problem solving, they made the move!
+                </p>
+              </div>
+            </div> -->
 
-                            <a class="overlay" href="https://pjwhite08.github.io/firstResponsiveWebsite/">Responsive <br> Site
-                            </a>
-                        
-                    </div>
-                    <div class="galleryImage">
-                        <img src="./profilePics/NASALandingPagePic.png">
-                        <a class="overlay" href="https://pjwhite08.github.io/NASA_Landing/"><br> Landing <br> Page
-                        </a>
-                    </div>
+            
+          
+            <!-- <div class="galleryDisplay">
+              <img src="./profilePics/hairSalonPic.png" />
+              <a
+                class="overlay"
+                href="https://pamelajwhite.github.io/hairSalonWebsite/"
+                >Hair Salon
+              </a>
+            </div> -->
+            <!-- 
+            <div class="galleryDisplay">
+              <img
+                class="responsiveSiteImg"
+                src="./profilePics/responsivePagePic.png"
+              />
 
-                    <div class="galleryImage">
-                        <img src="./profilePics/ticTacToePic.png">
-                        <a class="overlay" href="https://pjwhite08.github.io/hairSalonWebsite/">Tic Tac Toe
-                        </a>
-                    </div>
-                    <div class="galleryImage">
-                        <img src="./profilePics/evenOddListPic.png">
-                        <a class="overlay" href="https://pjwhite08.github.io/hairSalonWebsite/">Odd <br> Word <br> List
-                        </a>
-                    </div>
-                    <div class="galleryImage">
-                        <img src="./profilePics/calculatorPic.png">
-                        <a class="overlay" href="https://pjwhite08.github.io/hairSalonWebsite/">Calculator
-                        </a>
-                    </div>
-                </div>
-            </section>
+              <a
+                class="overlay"
+                href="https://pamelajwhite.github.io/firstResponsiveWebsite/"
+                >Responsive <br />
+                Site
+              </a>
+            </div> -->
 
+            <!-- <div class="galleryDisplay">
+              <img src="./profilePics/ticTacToePic.png" />
+              <a
+                class="overlay"
+                href="https://pamelajwhite.github.io/TicTacToe-101/"
+                >Tic Tac Toe
+              </a>
+            </div> -->
 
+            <!-- <div class="galleryDisplay">
+              <img src="./profilePics/evenOddListPic.png" />
+              <a
+                class="overlay"
+                href="https://pamelajwhite.github.io/evenOddList/"
+                >Odd <br />
+                Word <br />
+                List
+              </a>
+            </div> -->
 
-        </main>
-
+            <!-- <div class="galleryDisplay">
+              <img src="./profilePics/calculatorPic.png" />
+              <a
+                class="overlay"
+                href="https://pamelajwhite.github.io/calculator-app-101/"
+                >Calculator
+              </a>
+            </div> -->
+            <!-- <div class="galleryDisplay">
+              <img src="./profilePics/NASALandingPagePic.png" />
+              <a
+                class="overlay"
+                href="https://pamelajwhite.github.io/NASA_Landing/"
+                >Landing <br />
+                Page
+              </a>
+            </div> -->
+          </div>
+        </section>
+      </main>
     </div>
     <footer>
-        <nav class="bottomNav">
-            <ul id=leftList>
-                <li><a href="home">home</a></li>
-                <li><a href="blog">blog</a></li>
-                <li><a href="contact">contact</a></li>
-            </ul>
-            <ul id=rightList>
-                <li><a href="linkedin.com">LinkedIn</a></li>
-                <li><a href="github.com">GitHub</a></li>
-            </ul>
-        </nav>
+      <nav class="bottomNav">
+        <ul id="leftList">
+          <li class="leftListItem">
+            <a href="./index.html">
+              <img
+                class="socialMediaImg"
+                id="leftListImg1"
+                src="./profilePics/homeIcon.png"
+              />
+            </a>
+          </li>
+          <li class="leftListItem">
+            <a href="./contact.html">
+              <img
+                class="socialMediaImg"
+                id="leftListImg2"
+                src="./profilePics/email-icon--clipart-best-22.png"
+              />
+            </a>
+          </li>
+        </ul>
+        <ul id="rightList">
+          <li class="rightListItem">
+            <a href="https://github.com/pjwhite08">
+              <img
+                class="socialMediaImg"
+                src="./profilePics/GitHub-Mark-32px.png"
+              />
+            </a>
+          </li>
+          <li class="rightListItem">
+            <a href="https://www.linkedin.com/in/pamela-white-969b23ab/">
+              <img
+                class="socialMediaImg"
+                src="./profilePics/icons8-linkedin-24.png"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </footer>
-</body>
-
+    <script src="./app.js"></script>
+  </body>
 </html>

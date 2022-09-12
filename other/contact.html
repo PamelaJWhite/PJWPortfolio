@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
-   
+
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="./base.css">
-    <link rel="stylesheet" href="./style.css">
-    
-    <title>Pamela J. White</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="contactStyles.css">
+
+    <title>PJW Contact</title>
 </head>
 
 <body>
@@ -31,35 +31,44 @@
                 <a href="./index.html">home</a>
                 <a href="./about.html">about</a>
                 <a href="./gallery.html">gallery</a>
-                <!-- <a href="./contact.html">contact</a> -->
+                <a href="./contact.html">contact</a>
                 <a href="./resume.html">resumé</a>
             </div>
+
         </nav>
     </header>
+    <div class="outerBackgroundWrapper">
+        <div class="outerBackground"></div>
+        <main class="mainContain" id="mainContainer">
+            <h1> Contact</h1>
+            <section class="backgroundColorImgWrapper">
+                <form class="form">
+                    <div class="leftForm">
 
-    <main>
-        <div class="rightBackground">
-        </div>
-        <div class="contentWrapper" id="contentWrapper">
+                        <div class="name"><label for="firstName">Name</label> <br>
+                            <label for="lastName"></label>
+                            <input type="text" name="firstName" id="firstName" placeholder="First">
+                            <input type="text" name="lastName" id="lastName" placeholder="Last">
+                        </div>
 
-            <div class="nameBackgroundColor" id="nameBackgroundColor">
-                <div class="backgroundSquare" id="backgroundSquare">
-                </div>
-                <h1>Pamela J. White</h1>
-            </div>
+                        <div class="email">
+                            <label for="email">Email</label> <br>
+                            <input type="text" name="email" id="email" placeholder="Email" required>
+                        </div>
 
-            <div class="picTitle">
-                <img src="./profilePics/myProfilePic.jpg" class="profile-pic id=" profilePic" alt="Head shot of Me">
-                <h2>
-                    Web Developer
-                </h2>
-            </div>
-            <article class="selfStatement">
-                I am an experienced professional using my exceptional creative problem solving skills in every web development adventure.
-            </article>
-        </div>
+                        <div class="comments">
+                            <label for="comments">Send Me a Message</label><br>
+                            <textarea maxlength="500" minlength="20" placeholder="Comments"></textarea>
+                        </div>
+                        
+                        <button class="send">Submit
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
 
-    </main>
     <footer>
         <nav class="bottomNav">
             <ul id=leftList>
@@ -80,8 +89,6 @@
             </ul>
         </nav>
     </footer>
-
-
     <script src="./app.js"></script>
 </body>
 

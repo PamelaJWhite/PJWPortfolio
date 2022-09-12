@@ -4,15 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ResumePJW</title>
-    <link rel="stylesheet" href="./resume-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./resume-style.css">
+
+    <title>PJW Resumé</title>
 </head>
 
 <body>
-    <main class="mainContainer">
+    <header>
+        <nav class="topNav">
+            <!--<a href="#home" class="active">Logo</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+            </a>
+            <div class="topNavLinks" ID="topNavLinks">
+                <a href="./index.html">home</a>
+                <a href="./about.html">about</a>
+                <a href="./gallery.html">gallery</a>
+                <!-- <a href="./contact.html">contact</a> -->
+                <a href="./resume.html">resumé</a>
+            </div>
+
+        </nav>
+    </header>
+    <main class="mainContainer" id="mainContainer">
         <section id="colorLeft"></section>
         <section id="rightColor"></section>
 
@@ -21,22 +45,24 @@
         <section id="image"></section>
         <section id="name">
             <h1>Pamela J. White</h1>
-            <h3>Student of Web Development</h3>
+            <h3 >Web Developer</h3>
         </section>
         <section id="profile" class="leftPieces">
-            <h2>Executive Profile</h2>
-            <p>Oh, I can't wait to have an executive profile. I probably shouldn't put "novice" profile here. Lorem
-                ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            <h2>Profile</h2>
+            <p>I am an experienced professional using my exceptional creative problem solving skills in every web development adventure.</p>
         </section>
         <section ID="expertise" class="leftPieces">
-            <h2>Areas of Expertise</h2>
+            <h2>Tech Skills</h2>
             <ul>
-                
-                <li>Wiggling my ears</li>
-                <li>Baking chocolate chip cookies</li>
-                <li>Killing plants (except the hideous bushes in front of our house; those will not die)</li>
-                <li>Sarcasm</li>
-                <li>Many other irrelevant skills</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>React</li>
+                <li>Express</li>
+                <li>Node.js</li>
+                <li>REST APIs</li>
+
             </ul>
         </section>
         <section id="contact" class="leftPieces">
@@ -50,6 +76,75 @@
             </ul>
         </section>
         <section id="interests" class="leftPieces">
+            <h2>Interests</h2>
+            <ul>
+                <li>UX Engineering</li>
+                <li>UX Design</li>
+                <li>Accessibility</li>
+                <li>Content Development</li>
+                <li>Techinical Writing</li>
+                <li>Teaching</li>
+                <li>Yoga, NFL football, disc golf, board games</li>
+            </ul>
+        </section>
+
+        <section id="employment" class="rightPieces">
+            <h2>Employment History</h2>
+            <h3>Behavior Analyst</h3>
+            <h4>Inspire Behavior Therapy 2010-present</h4>
+            <ul>
+                <li>Designing and implmenting skill acquisition and behavior reduction programs</li>
+                <li>Collaborating with behavior techs, school administration and teachers, families and caregivers</li>
+                <li>Teaching professionals and students to utilize ABA technologies</li>
+            </ul>
+            <h3>Director of Professional Services</h3>
+            <h4>Rethink First 2013-2015</h4>
+            <ul>
+                <li>Provided support to consumers utilizing a web-based platform for programming and analytics of special education instruciton</li>
+                <li>Collaborated with the development team to design our web-based behavior assessment tool </li>
+                <li>Designed and conducted online professional development</li>
+            </ul>
+        </section>
+        <section id="education" class="rightPieces">
+            <h2>Education History</h2>
+            <h3>Austin Coding Academy</h3>
+            <h4>Full-Stack Software Development</h4>
+            <ul>
+                <li>Designed and built an API</li>
+                <li>Learned and utilized HTML, CSS, JavaScript, Express, Node.js, React</li>
+                <li>Collaborated with peers in problem solving and development</li>
+            </ul>
+            <h3>University of Texas at Austin</h3>
+            <h4>Ph.D and M.Ed <span>Special Education, Autism and Developmental Disabilities</span></h4>
+            <h3>Brandeis University</h3>
+            <h4>B.A.<span> Psychology</span></h4>
+        </section>
+        <div class="contentContainer"> 
+        <section  id="executive" class="mobilePieces">
+            <h2>Profile</h2>
+            <p>I am an experienced professional using my exceptional creative problem solving skills in every web development adventure. </p>
+        </section>
+        <section class="mobilePieces">
+            <h2>Areas of Expertise</h2>
+            <ul>
+
+                <li>Wiggling my ears</li>
+                <li>Baking chocolate chip cookies</li>
+                <li>Killing plants (except the hideous bushes in front of our house; those will not die)</li>
+                <li>Sarcasm</li>
+                <li>Many other irrelevant skills</li>
+            </ul>
+        </section>
+        <section id="contact" class="mobilePieces">
+            <h2>Contact Details</h2>
+            <ul id="contactList">
+                <li>Mobile: 215-360-2300</li>
+                <li>pamelajeanwhite@gmail.com</li>
+                <li>8007 Camden Drive</li>
+                <li>Austin, TX 78757</li>
+            </ul>
+        </section>
+        <section id="interests" class="mobilePieces">
             <h2>Main Interests</h2>
             <ul>
                 <li>Yoga</li>
@@ -61,8 +156,8 @@
                 <li>Many other irrelevant things</li>
             </ul>
         </section>
-        
-        <section id="employment" class="rightPieces">
+
+        <section id="employment" class="mobilePieces">
             <h2>Employment History</h2>
             <h3>Fancier Job Title</h3>
             <h4>Fancier Company 2023-future</h4>
@@ -79,7 +174,7 @@
                 <li>Meanwhile, I shall amuse myself</li>
             </ul>
         </section>
-        <section id="education" class="rightPieces">
+        <section id="education" class="mobilePieces">
             <h2>Education History</h2>
             <h3>Austin Coding Academy</h3>
             <h4>Full-Stack Software Development</h4>
@@ -91,13 +186,57 @@
             <h3>University of Texas at Austin</h3>
             <h4>Completely Irrelevant Ph.D.</h4>
             <h4>Completely Irrelevant M.Ed.</h4>
-          <h3>Brandeis University</h3> 
+            <h3>Brandeis University</h3>
             <h4>Completely Irrelevant B.A.</h4>
 
         </section>
+    </div>
+        <footer class="smFooter">
+            <nav class="bottomNav">
 
+                <ul id=leftList>
+                    <li class="leftListItem"><a href="./index.html">
+                            <img class="socialMediaImg" id="leftListImg1" src="./profilePics/homeIcon.png">
+                        </a></li>
+                    <li class="leftListItem"><a href="./contact.html">
+                            <img class="socialMediaImg" id="leftListImg2" src="./profilePics/email-icon--clipart-best-22.png">
+                        </a></li>
+                </ul>
+                <ul id=rightList>
+                    <li class="rightListItem"><a href="https://github.com/pjwhite08">
+                            <img class="socialMediaImg" src="./profilePics/GitHub-Mark-32px.png">
+                        </a></li>
+                    <li class="rightListItem"><a href="https://www.linkedin.com/in/pamela-white-969b23ab/">
+                            <img class="socialMediaImg" src="./profilePics/icons8-linkedin-24.png">
+                        </a></li>
+                </ul>
+
+            </nav>
+
+    </footer>
     </main>
+    <footer class="lgFooter">
+        <nav class="bottomNav">
 
+            <ul id=leftList>
+                <li class="leftListItem"><a href="./index.html">
+                        <img class="socialMediaImg" id="leftListImg1" src="./profilePics/homeIcon.png">
+                    </a></li>
+                <li class="leftListItem"><a href="./contact.html">
+                        <img class="socialMediaImg" id="leftListImg2" src="./profilePics/email-icon--clipart-best-22.png">
+                    </a></li>
+            </ul>
+            <ul id=rightList>
+                <li class="rightListItem"><a href="https://github.com/pjwhite08">
+                        <img class="socialMediaImg" src="./profilePics/GitHub-Mark-32px.png">
+                    </a></li>
+                <li class="rightListItem"><a href="https://www.linkedin.com/in/pamela-white-969b23ab/">
+                        <img class="socialMediaImg" src="./profilePics/icons8-linkedin-24.png">
+                    </a></li>
+            </ul>
+        </nav>
+</footer>
+
+<script src="./app.js"></script>
 </body>
-
 </html>
